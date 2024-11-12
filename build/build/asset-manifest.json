@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/JobDashboard/static/css/main.169c01a2.css",
+    "main.js": "/JobDashboard/static/js/main.e3ab1ec7.js",
+    "index.html": "/JobDashboard/index.html",
+    "main.169c01a2.css.map": "/JobDashboard/static/css/main.169c01a2.css.map",
+    "main.e3ab1ec7.js.map": "/JobDashboard/static/js/main.e3ab1ec7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.169c01a2.css",
+    "static/js/main.e3ab1ec7.js"
+  ]
+}
