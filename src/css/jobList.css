@@ -1,0 +1,102 @@
+/* General styling for the page */
+.job-list-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding-top: 60px; /* Adjust to fit navbar height */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* Panel container style */
+.panel {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  padding: 20px;
+  flex-grow: 1;
+  margin: 0 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  width: 100%;
+  max-width: 1200px; /* Restrict max width */
+  transition: height 0.3s ease; /* Smooth height transition */
+  overflow-y: scroll;
+}
+
+/* Section styling with light dividers */
+.section {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  max-height: none; /* Let the height grow based on content */
+  margin-bottom: 15px; /* Adds space between sections */
+}
+
+/* Job tile styling */
+.job-tile {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px 0;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.job-tile:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.job-tile-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.job-tile-description {
+  font-size: 14px;
+  color: #555;
+}
+
+/* Button styles */
+.add-job-button {
+  background-color: #007bff; /* Bright blue */
+  color: white;
+  padding: 12px 20px;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.add-job-button:hover {
+  background-color: #0056b3;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+/* Job Dashboard Header */
+.job-dashboard-header {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* Container for the jobs list, ensuring it's responsive */
+.job-list-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  flex-grow: 1;
+}

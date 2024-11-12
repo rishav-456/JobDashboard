@@ -1,0 +1,68 @@
+/* General Layout */
+.candidate-details-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+.candidate-details-container h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Content Styling */
+.candidate-details-container p {
+  font-size: 1rem;
+  color: #555;
+  margin: 8px 0;
+}
+
+.candidate-details-container button {
+  display: block;
+  margin: 10px auto;
+  width: 100%;
+}
+
+.status-dropdown,
+.status-save-button,
+.back-button {
+  margin-top: 15px;
+}
+
+.status-dropdown {
+  width: 100%;
+}
+
+/* Button styling */
+.status-save-button {
+  background-color: #007bff;
+  color: white;
+}
+
+.back-button {
+  color: #555;
+  border-color: #ddd;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+  .candidate-details-container {
+    padding: 15px;
+  }
+
+  .candidate-details-container h3 {
+    font-size: 1.25rem;
+  }
+
+  .candidate-details-container p {
+    font-size: 0.9rem;
+  }
+}

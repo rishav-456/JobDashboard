@@ -1,0 +1,62 @@
+/* Center panel with border */
+.candidate-panel {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+/* Grid for candidate tiles */
+.candidate-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Candidate tile styling */
+.candidate-tile {
+  width: 250px;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+}
+
+/* 3D hover effect */
+.candidate-tile:hover {
+  transform: translateY(-4px);
+}
+
+/* Status label colors */
+.status-label {
+  font-weight: bold;
+  margin-top: 8px;
+}
+
+.status-label.under-review {
+  color: #ff9800;
+}
+
+.status-label.interview-scheduled {
+  color: #2196f3;
+}
+
+.status-label.rejected {
+  color: #f44336;
+}
+
+/* Responsive design for mobile view */
+@media (max-width: 600px) {
+  .candidate-panel {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .candidate-tile {
+    width: 100%;
+  }
+}

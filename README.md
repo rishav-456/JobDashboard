@@ -1,70 +1,79 @@
-# Getting Started with Create React App
+# Job Management Dashboard
+A web-based Job Management Dashboard for an admin to manage job postings and candidate assessments. This application enables the admin to sign in, view job listings, candidate details, create assessments, and navigate between job-related functionalities.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
+Admin Authentication: A captcha-enabled sign-in for enhanced security.
+Job Listings: Display, add, and remove job postings dynamically.
+Candidate Management: View candidates by job and access candidate details.
+Assessment Assignment: Assign assessments to candidates for evaluation.
+Responsive and Modern UI: Easy-to-use interface styled with consistent and accessible design patterns.
+Screenshots
 
-## Available Scripts
+# Admin Signin Page
+![image](https://github.com/user-attachments/assets/91b93f14-52df-4af2-b468-8ffe6d8dce8d)
 
-In the project directory, you can run:
 
-### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# Main dashboard for managing job listings.
+![image](https://github.com/user-attachments/assets/04341898-5dd4-4c9c-aed5-eda581ac8186)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Tech Stack
+## Frontend: React, React Router
+## Styling: CSS, Inline Styling
+## Backend: Placeholder for authentication and job management
+##API Integrations: Placeholder for future integration (if applicable)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Getting Started
+Prerequisites
+Ensure you have Node.js installed. You can download it from nodejs.org.
 
-### `npm run build`
+Installation
+Clone the repository:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+bash
+Copy code
+git clone https://github.com/yourusername/job-management-dashboard.git
+cd job-management-dashboard
+Install dependencies:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+bash
+Copy code
+npm install
+Run the app:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+Copy code
+npm start
+The application will be available at http://localhost:3000.
 
-### `npm run eject`
+Project Structure
+App.js: Contains the main app logic, including routes and authentication logic.
+components/: Contains reusable components like Header, JobDetail, CandidateDetail.
+pages/: Contains page components such as Home, Candidates, Assignment, CreateAssessment.
+Available Scripts
+npm start: Starts the app in development mode.
+npm run build: Builds the app for production.
+npm test: Launches the test runner.
+Usage
+Admin Sign-In: Enter email, password, and solve the CAPTCHA.
+Job Dashboard: Add, edit, or remove jobs. Dynamically resizes sections as jobs are added or removed.
+Candidate Management: View candidate lists for specific job postings and access their detailed information.
+Assignment Creation: Assign assessments to candidates and monitor their progress.
+Code Overview
+Dynamic Styling
+The components, particularly in App.js, utilize dynamic inline styling for flexibility and ease of maintenance. Key styles include:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Shadow Effect: Shadow is applied to the left and bottom edges for a clean, elevated look.
+Responsive Layout: Flexbox used to maintain layout integrity across screen sizes.
+Button Styles: Custom styling applied to Sign In and Refresh Captcha buttons for a polished UI.
+Authentication Flow
+The application features a basic CAPTCHA mechanism generated on the frontend to add an extra layer of security to the sign-in flow.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Future Improvements
+Backend Integration: Connect to a real authentication system.
+API Support: Add API endpoints for dynamic job and candidate data.
+Enhanced Security: Implement robust authentication (e.g., OAuth).
+License
+This project is open-source and available under the MIT License.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
